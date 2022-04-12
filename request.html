@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=""/> 
+    <meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png"> -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+	<!-- <link rel="manifest" href="assets/images/site.webmanifest"> -->
+	<link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="assets/images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+    <title>НИИ «Восход»</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="layout" id="layout">
+
+    <header>     
+        <div class="header-icons-wrap">
+            <ul>
+                <li><img class="head-img1" src="assets/images/header-icon1.png" alt="#"></li>
+                <li><img class="head-img2" src="assets/images/header-icon2.png" alt="#"></li>
+                <li><img class="head-img3" src="assets/images/header-icon3.png" alt="#"></li>
+            </ul>
+        </div> 
+        <div class="holder-wrap"> 
+            <a href="#" role="banner" class="logo">ЦХЭД</a>
+            <nav class="main-menu" id="menu-holder">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalogue.html">Каталог</a></li> 
+                    <li><a href="sources.html">Источники</a></li>
+                    <li><a class="active" href="questions.html">Запросы</a></li>
+                    <li><a href="news.html">Новости</a></li>  
+                    <li><a href="about.html">О проекте</a></li>  
+                    <li><a href="contacts.html">Контакты</a></li>  
+                </ul>       
+            </nav>  
+            <a href="#modal-profile" id="btn-login" class="js-modal-link">
+                <span>Авторизация</span>
+            </a>
+        </div>   
+    </header>
+
+
+    <section class="bg">
+        <div class="holder" id="request">
+            <h3>Подать запрос на подтверждение трудового стажа, заработной платы</h3>
+            <div class="exp"><span class="star">*</span> —  обязательное поле</div>
+
+            <div class="request-content">
+                <form action="#" method="post" id="request-form">
+                    <ul>
+                        <li class="input_star">
+                            <label for="name">ФИО или организация<span class="star">*</span></label>
+                            <p>Введите свои фамилию, имя и отчество (последнее – при наличии) в именительном падеже, или название организации, если вы представляете юридическое лицо.</p>
+                            <input type="text" id="name" name="name" placeholder="Ввести" required>
+                        </li>
+                        <li class="input_star">
+                            <label for="date">Дата рождения<span class="star">*</span></label>
+                            <div class="date">
+                                <select name="date-day" id="date-day" placeholder="День" required>
+                                    <option>День</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select name="date-month" id="date-month">
+                                    <option>Месяц</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select name="date-year" id="date-year">
+                                    <option>Год</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="address-phone">Полный почтовый адрес, телефон</label>
+                            <p>Введите ваш полный почтовый адрес (или адрес организации) с указанием индекса, телефон. Граждане России указывают адрес на русском языке, граждане других стран – в латинской транскрипции.</p>
+                            <textarea name="address-phone" id="address-phone" placeholder="Ввести"></textarea>
+                        </li>
+                        <li>
+                            <label for="e-mail">Ваш e-mail<span class="star">*</span></label>
+                            <input type="text" name="email" id="e-mail" placeholder="Ввести" required>
+                        </li>
+                        <li class="send-copy">
+                            <label for="send-copy">Прислать мне копию</label>
+                            <p>Выберите "Да", чтобы получить на свой e-mail копию введенных вами данных.</p>
+                            <input type="radio" name="copy" value="1" checked="checked" id="copy-yes"><label for="copy-yes">Да</label> 
+                            <input type="radio" name="copy" value="0" id="copy-no"><label for="copy-no">Нет</label> 
+                        </li>
+                        <li>
+                            <label for="title">Полное наименование организации<span class="star">*</span></label>
+                            <input type="text" id="title" placeholder="Ввести" required>
+                        </li>
+                        <li>
+                            <label for="title2">Полное наименование организации<span class="star">*</span></label>
+                            <p>Введите полное наименование организации, стаж/зарплату в которой вы хотите подтвердить.</p>
+                            <input type="text" id="title2" placeholder="Ввести" required>
+                        </li>
+                        <li>
+                            <label for="subordination">Ведомственная подчиненность организации</label>
+                            <input type="text" id="subordination" placeholder="Ввести">
+                        </li>
+                        <li>
+                            <label for="location">Местонахождение организации<span class="star">*</span></label>
+                            <input type="text" id="location" placeholder="Ввести" required>
+                        </li>
+                        <li>
+                            <label for="period">Период работы<span class="star">*</span></label>
+                            <input type="text" id="period" placeholder="Ввести" required>
+                        </li>
+                        <li>
+                            <label for="position">Должность</label>
+                            <input type="text" id="postion" placeholder="Ввести">
+                        </li>
+                        <li>
+                            <label for="text">Текст запроса<span class="star">*</span></label>
+                            <textarea name="text" id="text" name="question" placeholder="Ввести" required></textarea>
+                        </li>
+                        <li>
+                            <label for="past-requests">Прошлые обращения</label>
+                            <p>Укажите, куда вы уже обращались по данному вопросу.</p>
+                            <textarea name="text" id="past-requests" placeholder="Ввести"></textarea>
+                        </li>
+                        <li class="capcha">
+                            <img src="assets/images/capcha.jpg" alt="#">
+                            <div class="info">
+                                <label for="capcha">Должность<span class="star">*</span></label>
+                                <input type="text" id="capcha" placeholder="Ввести" required>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="agree"><input type="checkbox" name="agree" id="agree-feedback"><label for="agree-feedback">Даю согласие на обработку своих <a href="#">персональных данных</a></label></div>
+                            <div class="btn-line"><input type="submit" class="btn" value="Отправить"></div>
+                        </li>
+                    </ul>
+                </form>            
+            </div>        
+        </div>
+    </section>
+
+    <footer>
+        <div class="holder f-wrap">
+            <div class="f-logo">
+                <span>© 2020 ЦХЭД</span>
+                <p>Публикация материалов сайта допускается только при указании источника и прямой активной гиперссылки.</p>
+            </div>
+            <ul class="f-info">
+                <li><a href="#" >Условия использования</a></li>
+                <li><a href="map.html" id="map">Карта сайта</a></li>
+                <li><p>ФГБУ НИИ «Восход» </p></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div class="modal-fadeout"></div>
+
+    <div class="modal-wrapper" id="modal-profile">
+        <div class="modal">
+            <div class="contents">
+                <div class="modal-close" title="close"></div>
+                <h4>Авторизация</h4>
+                <div class="tabs">
+                    <ul id="tabs">
+                        <li><a href="#modal-profile-authorisation" data-header="Авторизация" class="tab-act">Вход</a></li>
+                        <li><a href="#modal-profile-registration" data-header="Регистрация">Регистрация</a></li>
+                    </ul>
+                </div>
+                
+                <div id="modal-profile-authorisation" class="tab-content tab-content-act">
+                    <form action="#" method="post" class="form">
+                        <div class="form">
+                            <input type="email" name="email" maxlength="255" value="" placeholder="E-mail" required>
+                            <input type="password" name="password" maxlength="255" value="" placeholder="Пароль" required>
+
+                            <button class="btn">Войти</button>
+                        </div>
+                    </form>
+
+                    <a href="#modal-profile-forget" class="forget js-modal-link" data-header="Восстановление пароля">Забыли пароль?</a>
+                </div>
+
+                <div id="modal-profile-registration" class="tab-content">
+                    <form>    
+                        <div class="form">
+                            <input type="email" name="email" maxlength="255" value="" placeholder="E-mail" required>
+                            <input type="password" name="password" maxlength="255" value="" placeholder="Пароль" required>
+                            <input type="password" name="password" maxlength="255" value="" placeholder="Пароль еще раз" required>
+
+                            <div class="cb-line"><input type="checkbox" name="agree" id="modal-profile-agree" checked="checked"><label for="modal-profile-agree">Даю согласие на обработку своих <a href="#">персональных данных</a></label></div>
+
+                            <button class="btn">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="modal-profile-forget" class="tab-content">
+                    <div class="text">Для восстановления пароля, введите email на который зарегестрирован аккаунт</div>
+                    <form>    
+                        <div class="form">
+                            <input type="email" name="email" maxlength="255" value="" placeholder="E-mail" required>
+
+                            <button class="btn">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal-wrapper" id="modal-done">
+        <div class="modal">
+            <div class="contents">
+                <div class="modal-close" title="Close"></div>
+                <img src="assets/images/modal-done-icon.svg" alt="#">
+
+                <h4>Готово</h4>
+
+                <div class="text">
+                    <p>Ссылка на восстановление пароля отправлена на почту</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>

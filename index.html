@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=""/> 
+    <meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+	<!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png"> -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+	<!-- <link rel="manifest" href="assets/images/site.webmanifest"> -->
+	<link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="assets/images/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+    <title>НИИ «Восход»</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="layout" id="layout">
+
+    <header>     
+        <div class="header-icons-wrap">
+            <ul>
+                <li><img class="head-img1" src="assets/images/header-icon1.png" alt="#"></li>
+                <li><img class="head-img2" src="assets/images/header-icon2.png" alt="#"></li>
+                <li><img class="head-img3" src="assets/images/header-icon3.png" alt="#"></li>
+            </ul>
+        </div> 
+        <div class="holder-wrap"> 
+            <a role="banner" class="logo">ЦХЭД</a>
+            <nav class="main-menu" id="menu-holder">
+                <ul>
+                    <li class="active"><a class="active" href="index.html">Главная</a></li>
+                    <li><a href="catalogue.html">Каталог</a></li> 
+                    <li><a href="sources.html">Источники</a></li>
+                    <li><a href="questions.html">Запросы</a></li>
+                    <li><a href="news.html">Новости</a></li>  
+                    <li><a href="about.html">О проекте</a></li>  
+                    <li><a href="contacts.html">Контакты</a></li>  
+                </ul>      
+            </nav>  
+            <a href="#modal-profile" id="btn-login" class="js-modal-link">
+                <span>Авторизация</span>
+            </a> 
+        </div>   
+    </header>
+
+    <main style="background-image: url('assets/images/main-bcg.jpg')">
+        <div class="holder main">
+            <h1>Документы военных лет</h1>
+            <div class="search">
+                <form action="" id="search">        
+                    <input type="text" placeholder="Введите запрос">              
+                        <div class="search-btn-wrap">
+                            <select name="category" data-pos="right" class="search-filter">
+                                <option selected="selected">ВОВ</option>
+                                <option>ГАРФ</option>
+                                <option>РГАСПИ</option>
+                            </select>          
+                            <button class="search-btn">Искать</button> 
+                       </div>                                             
+                </form>
+                <div class="example-search"><p>Популярный запрос: <a href="#">Противовоздушная оборона Москвы</a></p></div>
+            </div>
+            <div class="main-slider">
+                <h3 class="slider-head">Источники документов</h3>
+                <div class="slider">         
+                    <ul class="slider-items js-slider" data-adaptive="true" data-arrows="true" data-dots="false">
+                        <li class="item">
+                            <img src="assets/images/slider-img1.png" alt="#">
+                            <h5>Гарф</h5>
+                        </li>
+                        <li class="item">
+                            <img src="assets/images/slider-img2.png" alt="#">
+                            <h5>Ргва</h5>
+                        </li>
+                        <li class="item">
+                            <img src="assets/images/slider-img3.png" alt="#">
+                            <h5>Росархив</h5>
+                        </li>
+                        <li class="item">
+                            <img src="assets/images/slider-img4.png" alt="#">
+                            <h5>Рга</h5>
+                        </li>
+                        <li class="item">
+                            <img src="assets/images/slider-img5.png" alt="#">
+                            <h5>РГАЛи</h5>
+                        </li> 
+                        <li class="item">
+                            <img src="assets/images/slider-img1.png" alt="#">
+                            <h5>РГАЛи</h5>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="doc">
+        <div class="holder">
+            <div class="doc-head">
+                <h2>Документы дня</h2>
+                <p>Здесь показаны документы за <span>24 ноября 1944 г.</span></p>
+            </div>
+            <div class="doc-items">
+                <a href="assets/images/doc-item1.jpg" class="doc-item"><img src="assets/images/doc-item1.jpg" alt="#"></a>
+                <a href="assets/images/doc-item2.jpg" class="doc-item"><img src="assets/images/doc-item2.jpg" alt="#"></a>
+                <a href="assets/images/doc-item3.jpg" class="doc-item"><img src="assets/images/doc-item3.jpg" alt="#"></a>
+                <a href="assets/images/doc-item4.jpg" class="doc-item"><img src="assets/images/doc-item4.jpg" alt="#"></a>        
+            </div>
+        </div>
+    </section>
+
+    <section class="photo">
+        <div class="holder photo-wrap">
+            <div class="photo-head">
+                <h2>Фотографии дня</h2>
+                <p>Здесь показаны фотографии за <span>24 ноября 1944 г.</span></p>
+            </div>
+            <div class="photo-items">
+              
+                <div class="img-line top-photo-line">
+                   <a href="assets/images/photo-item1.jpg"><img src="assets/images/photo-item1.jpg" alt="#"></a>
+                   <a href="assets/images/photo-item2.jpg"><img src="assets/images/photo-item2.jpg" alt="#"></a>
+                </div>
+                <div class="img-line bottom-photo-line">
+                    <a href="assets/images/photo-item3.jpg"><img src="assets/images/photo-item3.jpg" alt="#"></a>
+                    <a href="assets/images/photo-item4.jpg"><img src="assets/images/photo-item4.jpg" alt="#"></a>
+                    <a href="assets/images/photo-item5.jpg"><img src="assets/images/photo-item5.jpg" alt="#"></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="holder news-wrap">
+            <h2>Новости</h2>
+            <ul class="news-items">
+                <li class="item">
+                    <a href="#">
+                        <span>13 февраля 2020</span>
+                        <h4>Федеральное архивное агентство информирует</h4>
+                        <p>Небольшое текстовое превью новости с коротким описанием содержания</p>           
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span>13 февраля 2020</span>
+                        <h4>Открылась выставка документов возвращённого архива А.В.Колчака</h4>
+                        <p>Небольшое текстовое превью новости с коротким описанием содержания</p>           
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span>13 февраля 2020</span>
+                        <h4>Рабочая поездка директора РГВА В.П. Тарасова в Германию</h4>
+                        <p>Небольшое текстовое превью новости с коротким описанием содержания</p>           
+                    </a>
+                </li>
+            </ul>
+            <div class="more"><a href="news.html">Смотреть все новости</a></div>
+        </div>
+    </section>
+
+    <section class="statistics">
+        <div class="holder stat-wrap">
+            <h2>Статистика </br>проекта</h2>
+            <ul class="stat-counter">
+                <li>
+                    <div class="num num-doc">15 000</div>
+                    <div class="label">Документов</div>
+                </li>
+                <li class="num-border">
+                    <div class="num num-fund">780</div>
+                    <div class="label">Фондов</div>
+                </li>
+                <li>
+                    <div class="num num-archive">15</div>
+                    <div class="label">Архивов</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="holder f-wrap">
+            <div class="f-logo">
+                <span>© 2020 ЦХЭД</span>
+                <p>Публикация материалов сайта допускается только при указании источника и прямой активной гиперссылки.</p>
+            </div>
+            <ul class="f-info">
+                <li><a href="#" >Условия использования</a></li>
+                <li><a href="map.html" id="map">Карта сайта</a></li>
+                <li><p>ФГБУ НИИ «Восход» </p></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="modal-fadeout"></div>
+
+    <div class="modal-wrapper" id="modal-profile">
+        <div class="modal">
+            <div class="contents">
+                <div class="modal-close" title="close"></div>
+                <h4>Авторизация</h4>
+                <div class="tabs">
+                    <ul id="tabs">
+                        <li><a href="#modal-profile-authorisation" data-header="Авторизация" class="tab-act">Вход</a></li>
+                        <li><a href="#modal-profile-registration" data-header="Регистрация">Регистрация</a></li>
+                    </ul>
+                </div>
+                
+                <div id="modal-profile-authorisation" class="tab-content tab-content-act">
+                    <form action="#" method="post" class="form">
+                        <div class="form">
+                            <input type="email" name="email" maxlength="255" value="" placeholder="E-mail" required>
+                            <input type="password" name="password" maxlength="255" value="" placeholder="Пароль" required>
+
+                            <button class="btn">Войти</button>
+                        </div>
+                    </form>
+
+                    <a href="#modal-profile-forget" class="forget js-modal-link" data-header="Восстановление пароля">Забыли пароль?</a>
+                </div>
+
+                <div id="modal-profile-registration" class="tab-content">
+                    <form>    
+                        <div class="form">
+                            <input type="email" name="email" maxlength="255" value="" placeholder="E-mail" required>
+                            <input type="password" name="password" maxlength="255" value="" placeholder="Пароль" required>
+                            <input type="password" name="password" maxlength="255" value="" placeholder="Пароль еще раз" required>
+
+                            <div class="cb-line"><input type="checkbox" name="agree" id="modal-profile-agree" checked="checked"><label for="modal-profile-agree">Даю согласие на обработку своих <a href="#">персональных данных</a></label></div>
+
+                            <button class="btn">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="modal-profile-forget" class="tab-content">
+                    <div class="text">Для восстановления пароля, введите email на который зарегестрирован аккаунт</div>
+                    <form>    
+                        <div class="form">
+                            <input type="email" name="email" maxlength="255" value="" placeholder="E-mail" required>
+
+                            <button class="btn">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal-wrapper" id="modal-done">
+        <div class="modal">
+            <div class="contents">
+                <div class="modal-close" title="Close"></div>
+                <img src="assets/images/modal-done-icon.svg" alt="#">
+
+                <h4>Готово</h4>
+
+                <div class="text">
+                    <p>Ссылка на восстановление пароля отправлена на почту</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
